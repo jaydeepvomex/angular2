@@ -74,9 +74,9 @@ A component in Angular is a class with template and a decorator
 - Class
 - Decorator
 
-> Template defines the user interface, Contains the HTML, directives and data bindings
-> Class contains the code required for the template
-> Decorator adds the meta data to the class making it an Angular component
+1. Template defines the user interface, Contains the HTML, directives and data bindings
+2. Class contains the code required for the template
+3. Decorator adds the meta data to the class making it an Angular component
 
 An example of a component
 ``` javascript
