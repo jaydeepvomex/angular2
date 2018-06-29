@@ -95,3 +95,14 @@ export class EmployeeComponent {
     age: number = 20;
 }
 ```
+
+Using interpolation
+
+`<img src='{{imagePath}}'/>`
+
+``` javascript
+...
+export class AppComponent {
+	imagePath: string = 'http://www.website.com/pathToLogo.png';
+}
+```
