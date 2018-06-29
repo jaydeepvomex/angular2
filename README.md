@@ -78,7 +78,7 @@ A component in Angular is a class with template and a decorator
 2. Class contains the code required for the template
 3. Decorator adds the meta data to the class making it an Angular component
 
-An example of a component
+#### An example of a component
 ``` javascript
 import { Component } from '@angular/core'
 
@@ -96,7 +96,7 @@ export class EmployeeComponent {
 }
 ```
 
-Using interpolation
+#### Using interpolation
 
 `<img src='{{imagePath}}'/>`
 
@@ -106,3 +106,23 @@ export class AppComponent {
 	imagePath: string = 'http://www.website.com/pathToLogo.png';
 }
 ```
+
+#### Property Binding
+
+`<img [src]='imagePath'/>`
+
+#### Attribute Binding
+
+``` javascript
+export class EmployeeComponent {
+    columnSpan: number = 2;
+}
+```
+
+``` md
+<th [attr.colspan]="columnSpan">
+	Employee Details
+</th>
+```
+
+
